@@ -1,0 +1,79 @@
+body {
+  background: black;
+}
+.slideContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #f8e65c;
+  font-size: 16px;
+  padding: 11px 23px;
+  position: absolute;
+  width: 100%;
+  bottom: 11px;
+}
+.scrolling {
+  animation: marquee 30s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+}
+.scrolling span {
+  text-transform: uppercase;
+  /* padding: 11px 23px; */
+}
+.scrolling span.title {
+  background: #0f2145;
+  color: white;
+  padding: 11px 23px;
+  margin: 0px 20px;
+}
+
+.ytp-chrome-top,
+.ytp-show-cards-title {
+  display: none !important;
+}
+.bl-bg {
+  background-color: #0b33d2;
+  color: white;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../img/bg-path.svg);
+}
+.rd-bg {
+  margin-right: 14px;
+  background-color: #d61625;
+  font-size: 15px;
+  padding: 10px 13px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+  background-image: url(../img/red-bg.svg);
+}
+.bgred-headl {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+  background-image: url(../img/bgll.svg);
+  background-color: #d61625;
+}
+h4.bgred-headl {
+  font-size: 20px;
+  height: 11.8vh;
+  line-height: 4.2;
+}
+.n-marg {
+  margin-top: -5px;
+}
+.mainNe p {
+  font-size: 16px;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
