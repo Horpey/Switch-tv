@@ -69,6 +69,28 @@ h4.bgred-headl {
 .mainNe p {
   font-size: 16px;
 }
+.vidframe {
+  position: relative;
+}
+.newtabs {
+  position: absolute;
+  bottom: 17px;
+  width: 100%;
+  left: 14.3%;
+}
+.newtabs .nav-tabs {
+  border: 0px;
+}
+.newtabs .nav-tabs .nav-link {
+  background-color: white;
+  margin-right: 9px;
+  color: black;
+  border: 0px;
+  text-transform: uppercase;
+}
+.newtabs .nav-tabs .nav-link.active {
+  background: #f8e65c;
+}
 @keyframes marquee {
   from {
     transform: translateX(0);
