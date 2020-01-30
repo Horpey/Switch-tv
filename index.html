@@ -20,11 +20,21 @@
                 <div class="row">
                     <div class="col-md-10 px-0">
                         <div class="vidframe">
-                            <iframe style="width: 100%; height: 80.7vh;"
-                                src="https://www.youtube.com/embed/4mxXdCUXSSs?start=165&autoplay=1&showinfo=0&controls=0"
+
+                            <iframe class="toogleVid2" style="width: 100%; height: 80.7vh;"
+                                src="https://www.youtube.com/embed/eRHjRCY7-3Q?autoplay=1&showinfo=0&controls=0"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
+
+
+                            <iframe class="toogleVid" style="width: 100%; height: 80.7vh;"
+                                src="https://www.youtube.com/embed/jBFFJPx6v-c?autoplay=1&showinfo=0&controls=0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+
                             <div class="newtabs">
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item">
@@ -143,6 +153,7 @@
 <script type="text/javascript" src="./slick/slick.js"></script>
 <script>
     $(document).ready(function () {
+        $('.toogleVid2').hide();
         $('.bannerSlide').slick({
             dots: false,
             fade: true,
@@ -164,6 +175,10 @@
             slidesToShow: 1,
             pauseOnHover: false
         });
+        setTimeout(() => {
+            $('.toogleVid').fadeToggle();
+            $('.toogleVid2').fadeToggle();
+        }, 25000);
     });
 </script>
 
