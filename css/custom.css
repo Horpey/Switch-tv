@@ -74,16 +74,16 @@ h4.bgred-headl {
 }
 .newtabs {
   position: absolute;
-  bottom: 12px;
+  bottom: 9px;
   width: 100%;
-  left: 14.3%;
+  left: 0.3%;
 }
 .newtabs .nav-tabs {
   border: 0px;
 }
 .newtabs .nav-tabs .nav-link {
   background-color: white;
-  margin-right: 6px;
+  margin-right: 3px;
   color: black;
   border: 0px;
   padding: 3px 19px;
@@ -99,4 +99,9 @@ h4.bgred-headl {
   to {
     transform: translateX(-100%);
   }
+}
+
+.youtube-player {
+  width: 100% !important;
+  height: 80.7vh !important;
 }
