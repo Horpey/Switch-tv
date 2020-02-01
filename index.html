@@ -45,25 +45,27 @@
                                 allowfullscreen></iframe>
 
 
+                            <!-- Tabs Content -->
                             <div class="newtabs">
-                                <ul class="nav nav-tabs">
+                                <ul class="nav nav-tabs slider-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#n1">Into Africa</a>
+                                        <a class="nav-link ">1. Into Africa</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#n2">PROGRAMMING</a>
+                                        <a class="nav-link">2. PROGRAMMING</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#n3">policy</a>
+                                        <a class="nav-link">3. policy</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#n4">Stock</a>
+                                        <a class="nav-link">4. Stock</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#n5">updates</a>
+                                        <a class="nav-link">5. Updates</a>
                                     </li>
                                 </ul>
                             </div>
+                            <!-- Tabs Content -->
                         </div>
                         <div class="n-marg bg-white">
                             <div class="row">
@@ -73,20 +75,33 @@
                                     </h4>
                                 </div> -->
                                 <div class="col-md-10">
-                                    <div class="">
-
-                                    </div>
                                     <div class="mt-3 mainNe">
-                                        <div id="myTabContent" class="tab-content pl-3">
-                                            <div class="tab-pane fade active show" id="n1">
-                                                <p class="font-weight-bold mb-0">Amazon joins the $1T club as Alphabet
+                                        <div class="tab-content pl-3 slider-for">
+                                            <div>
+                                                <p class="font-weight-bold mb-0">1. Amazon joins the $1T club as
+                                                    Alphabet
                                                     dips out</p>
                                                 <p>American tech companies almost did something neat today before
                                                     messing it up. After reporting earnings yesterday.
                                                 </p>
                                             </div>
-                                            <div class="tab-pane fade" id="n2">
-                                                <p class="font-weight-bold mb-0">Oil Tumbles</p>
+                                            <div>
+                                                <p class="font-weight-bold mb-0">2. Oil Tumbles</p>
+                                                <p>Global Response seems faster than other Outbreaks
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0">3 Oil Tumbles</p>
+                                                <p>Global Response seems faster than other Outbreaks
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0">4 Oil Tumbles</p>
+                                                <p>Global Response seems faster than other Outbreaks
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0">5 Oil Tumbles</p>
                                                 <p>Global Response seems faster than other Outbreaks
                                                 </p>
                                             </div>
@@ -152,13 +167,14 @@
                 </div>
             </div>
         </div>
+    </div>
 </body>
 <!-- Slick -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./slick/slick.js"></script>
-<!-- <!-- <script src="./js/youtube.js"></script> --> -->
+<!-- <!-- <script src="./js/youtube.js"></script> -->
 <script>
     $(document).ready(function () {
         $('.toogleVid2').hide();
@@ -186,6 +202,28 @@
             slidesToShow: 1,
             pauseOnHover: false
         });
+
+        $('.slider-for').slick({
+            autoplay: true,
+            speed: 700,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true
+        });
+
+
+
         setTimeout(() => {
             $('.toogleVid').fadeToggle();
             $('.toogleVid2').fadeToggle();

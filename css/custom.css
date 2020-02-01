@@ -105,3 +105,7 @@ h4.bgred-headl {
   width: 100% !important;
   height: 80.7vh !important;
 }
+
+.slider-nav .slick-current div li a {
+  background-color: #f8e65c !important;
+}
