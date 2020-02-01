@@ -13,7 +13,7 @@
     <title>Switch TV</title>
 </head>
 
-<body>
+<body onload="startTime()">
     <div class="">
         <div class="vide">
             <div class="container-fluid">
@@ -114,8 +114,8 @@
                     <div class="col-md-2 px-0">
                         <div class="bl-bg">
                             <img class="logo mb-1" width="170" style="margin-left: -11px;" src="./img/logo.png" />
-                            <h3 class="mb-0">4:20pm</h3>
-                            <p class="small">Friday, January 20</p>
+                            <h3 class="mb-0" id="time"></h3>
+                            <p class="small" id="CurrentDate"></p>
 
                         </div>
                         <div class="bannerSlide">
@@ -173,62 +173,13 @@
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./slick/slick.js"></script>
-<!-- <!-- <script src="./js/youtube.js"></script> -->
+<script src="./js/custom.js"></script>
+
 <script>
-    $(document).ready(function () {
-        $('.toogleVid2').hide();
-        $('.toogleVid3').hide();
 
-
-        $('.bannerSlide').slick({
-            dots: false,
-            fade: true,
-            autoplay: true,
-            delay: 4,
-            speed: 300,
-            arrows: false,
-            infinite: true,
-            slidesToShow: 1,
-            pauseOnHover: false
-        });
-        $('.bannerSlide2').slick({
-            dots: false,
-            fade: true,
-            autoplay: true,
-            speed: 700,
-            arrows: false,
-            infinite: true,
-            slidesToShow: 1,
-            pauseOnHover: false
-        });
-
-        $('.slider-for').slick({
-            autoplay: true,
-            speed: 700,
-            dots: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true
-        });
-
-
-
-        setTimeout(() => {
-            $('.toogleVid').fadeToggle();
-            $('.toogleVid2').fadeToggle();
-        }, 25000);
-    });
 </script>
 
 </html>
