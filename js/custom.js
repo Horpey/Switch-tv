@@ -51,7 +51,7 @@ $(document).ready(function() {
   //   Moment JS
   var now = new Date();
   document.getElementById('CurrentDate').innerHTML = moment(now).format(
-    'dddd MMM, YYYY'
+    'Do dddd MMM, YYYY'
   );
 
   //   Time
